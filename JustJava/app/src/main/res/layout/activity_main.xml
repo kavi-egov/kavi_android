@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.justjava.MainActivity">
+
+
+    <LinearLayout
+        style="@style/linearlayout"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/name_field_id"
+            style="@style/linearlayout"
+            android:hint="@string/hint"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName" />
+
+        <TextView
+            style="@style/heading"
+            android:text="@string/topppings" />
+
+        <CheckBox
+            android:id="@+id/whipped_cream_id"
+            style="@style/checbox"
+            android:text="@string/topping1" />
+
+        <CheckBox
+            android:id="@+id/chocolate_id"
+            style="@style/checbox"
+            android:text="@string/topping2" />
+
+        <TextView
+            style="@style/heading"
+            android:text="@string/quantity" />
+
+        <LinearLayout
+            style="@style/linearlayout"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttobplusminus"
+                android:onClick="increment"
+                android:text="@string/plus" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                style="@style/textview"
+                android:text="@string/textvalue" />
+
+            <Button
+                style="@style/buttobplusminus"
+                android:onClick="decrement"
+                android:text="@string/minus" />
+        </LinearLayout>
+
+        <Button
+            style="@style/button"
+            android:onClick="submitOrder"
+            android:text="@string/order" />
+
+    </LinearLayout>
+
+
+</ScrollView>
